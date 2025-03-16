@@ -1,0 +1,10 @@
+{
+  "default": true, // Enable all default rules
+  "MD013": false, // Disable line length check
+  "MD025": false, // Disable multiple top-level headers check
+  "MD033": false, // Disable inline HTML check
+  "MD041": {
+    "level": 2 // Require headers to start at level 2 (##)
+  },
+  "MD047": false // Disable file should end with a single newline character
+}

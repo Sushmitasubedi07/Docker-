@@ -1,0 +1,103 @@
+# **What is DevOps?**
+
+DevOps combines **development (Dev)** and **operations (Ops)** to increase the efficiency, speed, and security of software development and delivery compared to traditional processes.
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeStAZH0uIF_DsMK6J5Jj0oMyuLXf0ipSLOVhofLjyddKHSb1zdEvlk_FEM8tYNrJV7e2pDxFnBEtGh-VHQ-Kk5sbdcWBsh1pDQDexK_0vSBwRUHvXuTiIWJVGrSvc4RlEKs99W8Q?key=0zbZQxMNGJcJ-vyIkvayxI5I)**
+
+---
+
+## **Who is a DevOps Engineer?**
+
+A **DevOps engineer** is someone who bridges the gap between **software development** and **IT operations**. They ensure faster, more efficient software delivery by implementing **automation, CI/CD pipelines, cloud infrastructure, and monitoring tools**. Their role is critical in maintaining a seamless workflow from **development to production**.
+
+---
+
+## **When Did DevOps Become a Thing?**
+
+In **2009**, at the **O’Reilly Velocity Conference**, **John Allspaw** and **Paul Hammond** presented _"10+ Deployments per Day: Dev and Ops Cooperation at Flickr"_. This presentation highlighted the need for **better communication and collaboration** between development and operations teams, marking the beginning of the DevOps movement.
+
+Encouraged by this, **Patrick Debois** founded the first **DevOps Days** conference in **Ghent**, leading to the evolution of **DevOps practices** worldwide.
+
+---
+
+## **DevOps Today**
+
+- The proportion of **top-performing teams** has almost **tripled**, now comprising **20%** of all teams.
+- **Software speed, stability, and availability** significantly contribute to organizational performance.
+- **Top performers** are **twice as likely** to meet or exceed their performance goals.
+- The **cloud** plays a crucial role in **high software delivery performance and availability**.
+- 
+
+---
+
+## **DevOps in the Future**
+
+DevOps is **revolutionizing software development** as companies face increasing pressure to **innovate faster**. The **DevOps market** is projected to grow from **$10.4 billion in 2023** to **$25.5 billion by 2028**. According to **Grand View Research, Inc.**, the market is expected to reach **$37.25 billion by 2030**, growing at a **16.8% CAGR** from **2023 to 2030**.
+
+- **33%** more time is spent on **infrastructure improvements** in DevOps organizations.
+- **90%+** of organizations have adopted **DevOps practices**.
+- **86%** of professionals prefer **DevOps** for **faster software development and releases**.
+- **54%** of engineers use **DevOps** to deploy **containerized applications**.
+
+With rising demand, companies are seeking **experts in automation, CI/CD, cloud computing, and Agile methodologies**. DevOps is shaping the **future of software development and IT operations**.
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcZme4BRMzLlrCpYCCq_hIOMFjlFO1FMTWBx_mNUWLtcNt7kFov7XthodiTZT0VOJlBfGGIf7gQj5Qp_zewKE3uajR-C8A0PhbT_AZwUWqnl_hZGS2sgdhOB2aZwLytQ6PbwvjkUw?key=0zbZQxMNGJcJ-vyIkvayxI5I)**
+
+---
+
+
+## **DevOps in Nepal**
+
+DevOps has **transformed software development** in **Nepal**, just as in other parts of the world. The IT sector is rapidly growing, with startups, outsourcing companies, and **established tech firms** adopting **cloud computing, automation, and DevOps practices** to boost efficiency.
+
+- Demand for **DevOps engineers** in Nepal is **at an all-time high**.
+- Growing **international collaborations** provide **remote work opportunities** for Nepalese engineers.
+- Nepalese engineers are **working with global firms**, contributing to **cutting-edge projects**.
+
+---
+
+## **DevOps Roadmap**
+
+Here’s a structured **roadmap** to help you navigate your **DevOps learning journey**:
+
+### **1. Fundamentals of Linux and Networking**
+- Learn **Linux commands** and **shell scripting**
+- Understand **networking concepts** (DNS, Load Balancing, Proxy, Firewalls)
+- Work with **SSH, FTP, and VPN**
+
+### **2. Version Control with Git**
+- Master **Git commands**
+- Learn **GitHub/GitLab** for collaborative development
+
+### **3. Scripting and Programming**
+- **Bash scripting** for automation
+- **Python** for writing **Infrastructure as Code (IaC)**
+
+### **4. CI/CD Pipelines**
+- Understand **Continuous Integration (CI)** and **Continuous Deployment (CD)**
+- Tools: **Jenkins, GitHub Actions, GitLab CI/CD, CircleCI**
+
+### **5. Infrastructure as Code (IaC)**
+- Learn **Terraform** and **Ansible**
+- Automate **cloud infrastructure deployment**
+
+### **6. Containerization and Orchestration**
+- **Docker**: Learn how to **containerize applications**
+- **Kubernetes**: Deploy and manage **containers at scale**
+
+### **7. Cloud Computing**
+- Learn **AWS, Azure, or Google Cloud Platform**
+- Work with **EC2, S3, IAM, Lambda, and serverless computing**
+
+### **8. Monitoring and Logging**
+- Tools: **Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana)**
+- Understand **log analysis** and **application performance monitoring**
+
+### **9. Security (DevSecOps)**
+- Learn **security best practices** in DevOps
+- Implement security scanning tools: **SonarQube, Trivy, OWASP ZAP**
+- **Secrets management** with **HashiCorp Vault** and **AWS Parameter Store**
+
+---
+
+## **Conclusion**
+
+DevOps is **reshaping IT and software development**. With the right **skills, tools, and mindset**, professionals can drive **innovation, automation, and efficiency**. The future of **DevOps** is promising, and it is an essential skill set for modern **IT professionals and developers**.
