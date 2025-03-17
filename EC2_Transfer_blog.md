@@ -1,13 +1,13 @@
 
-# **Transferring an EC2 Instance from One Region to Another**
+# Transferring an EC2 Instance from One Region to Another
 
-## **Steps to Transfer EC2 Instance from Region A (Seoul) to Region B (Virginia)**
+## Steps to Transfer EC2 Instance from Region A (Seoul) to Region B (Virginia)
 
 ![EC2Transfer2 drawio](https://github.com/user-attachments/assets/0a779612-b494-40a7-bbb5-e1fd406ff331)
 
 You see, [Amazon EC2](https://aws.amazon.com/ec2/getting-started/) allows users to rent virtual servers (instances) in the cloud to run applications, host websites, etc. AWS operates in multiple geographic regions worldwide, each region with a separate geographic area and its own data centers. Within each region, there are multiple isolated data centers called [availability zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html).
 
-### **Why Regions Matter?**
+### Why Regions Matter?
 
 -   EC2 instances are region-specific, meaning an instance created in one region cannot be directly moved to another. Instead, you need to create a copy of the instance in the target region. Some reasons for transferring EC2 instances include:
     
@@ -16,15 +16,15 @@ You see, [Amazon EC2](https://aws.amazon.com/ec2/getting-started/) allows users 
     3.  **Latency Reduction** – Moving instances closer to end-users improves application performance and reduces latency (the time delay between cause and effect).
     4.  **Compliance** – Some industries or countries require data to be stored in specific geographic locations due to regulatory requirements.
 
-### **Challenges of Transferring EC2 Instances**
+### Challenges of Transferring EC2 Instances
 
 -   Transferring EC2 instances between regions isn't as simple as clicking a button. This involves several steps, including creating [AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html), copying AMIs, and reconfiguring networking. Additionally, data transfer costs and potential downtime should be considered. However, with proper planning, these challenges can be mitigated. The success of the migration depends on replicating associated configurations, such as security groups, route tables, and IP settings, to match the target region's requirements.
 
-### **Creating an AMI and Copying It**
+### Creating an AMI and Copying It
 
 -   We can create an AMI using either the console or the AWS CLI. The following steps illustrate the process of transferring an EC2 instance from Seoul to Virginia:
 
-#### **A. Create an AMI (Amazon Machine Image) in Seoul**
+#### A. Create an AMI (Amazon Machine Image) in Seoul
 
 1.  Open the EC2 Dashboard in the Seoul (`ap-northeast-2`) region.
 2.  Select your EC2 instance.
@@ -35,7 +35,7 @@ You see, [Amazon EC2](https://aws.amazon.com/ec2/getting-started/) allows users 
 
 Then, click **Create Image** and wait for it to be available.
 
-#### **B. Copy the AMI to Virginia**
+#### B. Copy the AMI to Virginia
 
 1.  Go to **EC2 Dashboard → AMIs**.
 2.  Select the AMI you just created.
@@ -46,7 +46,7 @@ Then, click **Create Image** and wait for it to be available.
 
 Then, click **Copy AMI** and wait (this may take some time depending on size).
 
-#### **C. Launch a New Instance in Virginia**
+#### C. Launch a New Instance in Virginia
 
 1.  Switch to **Virginia (`us-east-1`)** in the AWS console.
 2.  Go to **EC2 Dashboard → AMIs**.
@@ -57,8 +57,7 @@ Then, click **Copy AMI** and wait (this may take some time depending on size).
 7.  Configure **storage, security groups, and network settings**.
 8.  Click **Launch**.
 
-> **[!NOTE]**  
-> After the instance is successfully launched in the target region, follow these additional steps to ensure everything works smoothly:
+> **Note** After the instance is successfully launched in the target region, follow these additional steps to ensure everything works smoothly:
 > 
 > -   **Verification**
 >     1.  Check that the instance is running and accessible.
@@ -68,25 +67,12 @@ Then, click **Copy AMI** and wait (this may take some time depending on size).
 >     1.  Delete the original AMI and snapshots in the source region to avoid unnecessary storage costs. See the reference for [AMI Costs](https://docs.aws.amazon.com/marketplace/latest/userguide/pricing-ami-products.html#pricing-models-for-ami-products).
 >     2.  Update any DNS records or configurations to point to the new instance in the target region.
 
-> **[!TIP]**
+> **Tip**
 > 
 > -   **Networking Considerations** – When launching the instance in the target region, you may need to reconfigure networking settings, such as VPCs, subnets, and security groups, to match the new environment.
 > -   **Data Transfer Costs** – Copying AMIs and transferring data between regions incurs costs. Check the AWS pricing page for details.
 > -   **Automation** – For frequent transfers, consider automating the process using AWS CLI, SDKs, or infrastructure-as-code tools like Terraform or CloudFormation.
 
-### **Conclusion**
+### Conclusion
 
 Transferring an EC2 instance from one AWS region to another is a multi-step process. By following best practices—such as testing in a non-production environment, monitoring costs, and verifying the new instance—you can ensure a smooth and successful migration. Whether you're a beginner or an experienced AWS user, mastering this skill will help you build a more resilient and efficient cloud infrastructure.
-
-----------
-
-### **Fixes Applied**
-
-✅ Removed trailing spaces (MD009).  
-✅ Ensured headings are surrounded by blank lines (MD022).  
-✅ Ensured the first line is a `#` heading (MD041).  
-✅ Added blank lines around lists (MD032).  
-✅ Replaced `*` with `-` for unordered lists (MD004).  
-✅ Ensured no extra blank lines inside blockquotes (MD028).
-
-This version of your markdown file is now **markdownlint-compliant** and ready to be committed. 🚀 Let me know if you need further refinements! 😊
