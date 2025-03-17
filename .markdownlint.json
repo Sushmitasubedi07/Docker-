@@ -1,16 +1,14 @@
 {
-  "default": true, // Enable all default rules
+  "default": true,
   "MD004": { "style": "dash" },
-  "MD009": { "br_spaces": 2 }, 
-  "MD012": { "maximum": 1 }, 
-  "MD013": false, // Disable line length check
+  "MD009": { "br_spaces": 2 },
+  "MD012": { "maximum": 1 },
+  "MD013": false,
   "MD022": true,
-  "MD025": false, // Disable multiple top-level headers check
-  "MD028": true
-  "MD033": false, // Disable inline HTML check
-  "MD041": {
-    "level": 2 // Require headers to start at level 2 (##)
-  },
-  "MD045": true
-  "MD047": false // Disable file should end with a single newline character
+  "MD025": false,
+  "MD028": true,
+  "MD033": false,
+  "MD041": { "level": 2 },
+  "MD045": true,
+  "MD047": false
 }
